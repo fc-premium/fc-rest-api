@@ -1,9 +1,8 @@
 {
   "name": "fc-rest-api",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "A REST API for forocoches.com",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "src/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -1,5 +1,7 @@
 .git/
 node_modules/
 out/
+index.d.ts
+index.js
 tsconfig.json
 webpack.config.js
