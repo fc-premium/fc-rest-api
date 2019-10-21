@@ -1,0 +1,26 @@
+{
+  "name": "fc-rest-api",
+  "version": "0.0.1",
+  "description": "A REST API for forocoches.com",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fc-premium/fc-rest-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fc-premium/fc-rest-api/issues"
+  },
+  "homepage": "https://github.com/fc-premium/fc-rest-api#readme",
+  "dependencies": {
+    "reflect-metadata": "^0.1.13",
+    "superagent": "^5.1.0",
+    "ts-cookies": "^1.0.0"
+  }
+}
