@@ -1,6 +1,6 @@
 {
   "name": "fc-rest-api",
-  "version": "0.0.4",
+  "version": "0.0.1",
   "description": "A REST API for forocoches.com",
   "main": "src/index.ts",
   "scripts": {
