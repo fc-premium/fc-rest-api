@@ -1,10 +1,11 @@
 {
   "name": "fc-rest-api-temp",
-  "version": "0.0.2",
+  "version": "0.0.8",
   "description": "A REST API for forocoches.com",
   "main": "js/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "gen-types": "dts-generator --project ./ --out index.d.ts"
   },
   "repository": {
     "type": "git",

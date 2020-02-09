@@ -1,6 +1,6 @@
 import { Urls } from '../urls'
 import { Utils } from '../utils'
-import { Dynamic, DynamicLock } from '../dynamic'
+import { Dynamic } from '../dynamic'
 
 import { UserStats } from './user-stats'
 import { UserAbouts } from './user-abouts'
@@ -32,7 +32,7 @@ export class User extends Dynamic {
 			this.update();
 	}
 
-	@Dynamic.DynamicLock
+	@Dynamic.Locked
 	public async update(): Promise<this> {
 
 		if (this.exists === false)

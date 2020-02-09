@@ -57,7 +57,7 @@ declare module 'token' {
 	}
 
 }
-declare module 'dynamic/dynamic' {
+declare module 'dynamic' {
 	import 'reflect-metadata';
 	export class Dynamic {
 	    private __dynamicCurrentPromise;
@@ -67,16 +67,6 @@ declare module 'dynamic/dynamic' {
 	export namespace Dynamic {
 	    function DynamicLock(target: Dynamic, propertyName: string, descriptor: PropertyDescriptor): void;
 	}
-
-}
-declare module 'dynamic/dynamic-lock' {
-	import { Dynamic } from 'dynamic/dynamic';
-	export function DynamicLock(target: Dynamic, {}: {}, descriptor: PropertyDescriptor): void;
-
-}
-declare module 'dynamic/index' {
-	export * from 'dynamic/dynamic';
-	export * from 'dynamic/dynamic-lock';
 
 }
 declare module 'post' {

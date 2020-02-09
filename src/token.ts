@@ -6,7 +6,7 @@ export class Token {
 
 	public static readonly timeUntilExpires: number = 60 * 60 * 1000;
 
-	private guest: boolean;
+	private is_guest: boolean;
 	private timestamp: number;
 	private hmac: string;
 
@@ -16,9 +16,9 @@ export class Token {
 
 	private parseRawToken(token: string): void {
 
-		this.guest = [undefined, null, '', 'guest'].includes(token);
+		this.is_guest = [undefined, null, '', 'guest'].includes(token);
 
-		if (!this.guest) {
+		if (!this.is_guest) {
 			const tokenChunks = token.split('-');
 
 			this.timestamp = parseInt(tokenChunks[0]);
@@ -35,7 +35,7 @@ export class Token {
 	}
 
 	public isGuest(): boolean {
-		return this.guest;
+		return this.is_guest;
 	}
 
 	public hasExpired(): boolean {

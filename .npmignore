@@ -1,7 +1,6 @@
 .git/
 .gitignore
+src/
 node_modules/
-index.d.ts
-index.js
 tsconfig.json
 webpack.config.js
