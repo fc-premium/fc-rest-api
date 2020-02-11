@@ -1,26 +1,31 @@
 {
-  "name": "fc-rest-api-temp",
-  "version": "0.0.8",
-  "description": "A REST API for forocoches.com",
-  "main": "js/index.js",
-  "scripts": {
-    "build": "tsc",
-    "gen-types": "dts-generator --project ./ --out index.d.ts"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fc-premium/fc-rest-api.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/fc-premium/fc-rest-api/issues"
-  },
-  "homepage": "https://github.com/fc-premium/fc-rest-api#readme",
-  "dependencies": {
-    "reflect-metadata": "^0.1.13",
-    "superagent": "^5.1.0",
-    "ts-cookies": "^1.0.0"
-  }
+        "name": "fc-rest-api-temp",
+        "version": "0.0.8",
+        "description": "A REST API for forocoches.com",
+
+        "main": "lib/index.js",
+        "types": "lib/index.d.js",
+
+        "scripts": {
+                "build": "tsc",
+                "gen-types": "dts-generator --project ./ --out index.d.ts"
+        },
+
+        "repository": {
+                "type": "git",
+                "url": "git+https://github.com/fc-premium/fc-rest-api.git"
+        },
+
+        "keywords": [],
+        "author": "",
+        "license": "MIT",
+        "bugs": {
+                "url": "https://github.com/fc-premium/fc-rest-api/issues"
+        },
+        "homepage": "https://github.com/fc-premium/fc-rest-api#readme",
+        "dependencies": {
+                "reflect-metadata": "^0.1.13",
+                "superagent": "^5.1.0",
+                "ts-cookies": "^1.0.0"
+        }
 }
