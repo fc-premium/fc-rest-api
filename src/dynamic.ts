@@ -31,7 +31,7 @@ export namespace Dynamic {
 		if (isDynamicInstance === true && isAsyncMethod === true) {
 			const methodBackup = <Function>descriptor.value;
 
-			descriptor.value = async function(this: Dynamic, ...args: any[]) {
+			descriptor.value = async (...args: any[]) => {
 				this.__dynamicCurrentPromise = methodBackup.apply(this, ...args);
 
 				await this.__dynamicCurrentPromise;
