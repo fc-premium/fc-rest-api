@@ -4,7 +4,7 @@
         "description": "A REST API for forocoches.com",
 
         "main": "lib/index.js",
-        "types": "lib/index.d.js",
+        "types": "lib/index.d.ts",
 
         "scripts": {
                 "build": "tsc",
